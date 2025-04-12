@@ -8,5 +8,7 @@ r.get("/b", cont.Feedback)
 r.get("/c", cont.Help)
 r.get("/d", cont.Faq)
 r.get("/e", cont.Privacy_policy)
+r.post("/save", cont.SaveData)
+r.post("/healthsave", cont.SaveHealthdata)
 
 module.exports = r;

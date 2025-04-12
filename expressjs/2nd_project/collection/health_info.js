@@ -1,4 +1,5 @@
 let ikrama = require('mongoose');
+const { SaveData } = require('../logic_function/function');
 
 let health_collection = ikrama.Schema({
     sugar: {
@@ -21,6 +22,10 @@ let health_collection = ikrama.Schema({
         type: Date,
         default: Date.now
     }
+
+        
 })
+
+
 
 module.exports = ikrama.model('health_info', health_collection);

@@ -56,13 +56,20 @@ let  health_data= async function(){
 
 
 let app = exp();
+
+// import json to show exp.response  is ko route sy pehly hi likhna hai
+app.use(exp.json())
+
 // use routing file
 app.use('/ikrama/route',route)
 
 db().then(()=>{
-    add_data();
-    personal_data();
-    health_data();
+
+
+
+    // add_data();
+    // personal_data();
+    // health_data();
     app.listen(process.env.PORT,()=>{
         console.log(`server is running on port http://localhost:${process.env.PORT}/ikrama/route/`);
 })
