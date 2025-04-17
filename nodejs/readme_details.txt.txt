@@ -19,3 +19,5 @@ npm i nodemailer => agr email bhejni ho tu is ko run karien gy.
 npm install bcryptjs => ye password ko encrypt krny ky liye.
 
 npm install mongoose => mongodb sy connect krny ky liye.
+
+npm install cors => double server run karny ky liye express mai install karien gy
